@@ -5,7 +5,7 @@
     $password = "tu_contraseña";
     $dbname = "mantenimiento";
 
-  
+
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     
@@ -13,7 +13,6 @@
         die("Error al conectarse a la base de datos: " . $conn->connect_error);
     } 
 
-   
     $sql = "DELETE FROM estadio WHERE fecha < '2023-12-12'";
 
     
